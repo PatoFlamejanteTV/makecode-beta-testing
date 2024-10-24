@@ -1,8 +1,8 @@
 input.onPinPressed(TouchPin.P0, function () {
-    player.change(LedSpriteProperty.Y, 0 - speed)
+    player.change(LedSpriteProperty.Y, -speed) // yeah, it sometimes glitches and shows "0 - speed" instead of "-speed"
 })
 input.onButtonPressed(Button.A, function () {
-    player.change(LedSpriteProperty.X, 0 - speed)
+    player.change(LedSpriteProperty.X, -speed) // yeah, it sometimes glitches and shows "0 - speed" instead of "-speed"
 })
 input.onPinPressed(TouchPin.P2, function () {
     player.change(LedSpriteProperty.Y, speed)
