@@ -5,7 +5,9 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "bitmap": "*"
+        "bitmap": "*",
+        "microbit-pxt-clicks": "github:bsiever/microbit-pxt-clicks#v0.2.2",
+        "sfc": "github:51bit/sfc#v0.1.1"
     },
     "files": [
         "main.blocks",
@@ -16,11 +18,11 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "7.1.13",
+        "target": "7.0.51",
         "targetId": "microbit"
     },
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
