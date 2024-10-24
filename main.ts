@@ -11,13 +11,12 @@ input.onButtonPressed(Button.B, function () {
     player.change(LedSpriteProperty.X, 1)
 })
 let player: game.LedSprite = null
-let sfcGamepad: sfc.gamepad = null
-let getpresskeylist = sfcGamepad.cachePressedKeyList(
-)
 // i dont KNOW IF THIS WOKRS 💜
-sfcGamepad = sfc.setSFC(
+let sfcGamepad = sfc.setSFC(
 DigitalPin.P0,
 DigitalPin.P1,
 DigitalPin.P2
+)
+let getpresskeylist = sfcGamepad.cachePressedKeyList(
 )
 player = game.createSprite(0, 0)
