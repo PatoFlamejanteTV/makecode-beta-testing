@@ -1,16 +1,18 @@
 input.onPinPressed(TouchPin.P0, function () {
-    player.change(LedSpriteProperty.Y, -1)
+    player.change(LedSpriteProperty.Y, 0 - speed)
 })
 input.onButtonPressed(Button.A, function () {
-    player.change(LedSpriteProperty.X, -1)
+    player.change(LedSpriteProperty.X, 0 - speed)
 })
 input.onPinPressed(TouchPin.P2, function () {
-    player.change(LedSpriteProperty.Y, 1)
+    player.change(LedSpriteProperty.Y, speed)
 })
 input.onButtonPressed(Button.B, function () {
-    player.change(LedSpriteProperty.X, 1)
+    player.change(LedSpriteProperty.X, speed)
 })
 let player: game.LedSprite = null
+let speed = 0
+speed = 1
 // i dont KNOW IF THIS WOKRS ��
 let sfcGamepad = sfc.setSFC(
 DigitalPin.P0,
