@@ -11,7 +11,7 @@ input.onButtonPressed(Button.B, function () {
     player.change(LedSpriteProperty.X, 1)
 })
 let player: game.LedSprite = null
-// i dont KNOW IF THIS WOKRS ��
+// i dont KNOW IF THIS WOKRS :purpleheart:
 let sfcGamepad = sfc.setSFC(
 DigitalPin.P0,
 DigitalPin.P1,
